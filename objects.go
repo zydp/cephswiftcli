@@ -79,7 +79,7 @@ func (this object) Get(bucket, key string) (resp []byte, err error) {
 		return
 	}
 	resp, l, err := this.handle.dataRead(httpData.Body)
-	if l > 0 {
+	if l < 0 {
 		return resp, errors.New(string(resp))
 	}
 	return resp, err
