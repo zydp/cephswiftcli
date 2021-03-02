@@ -1,2 +1,2 @@
-# cephswiftcli
-a simple client for ceph rados gateway swift
+# rgw swiftcli
+A simple Ceph Raods Gateway client
