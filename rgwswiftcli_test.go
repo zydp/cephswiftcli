@@ -21,6 +21,7 @@ func TestSwiftClient(t *testing.T) {
 	/*user auth*/
 	if err := SwiftHandle.Auth(user, key); nil != err {
 		fmt.Println("User Auth Failed:", err.Error())
+		reutrn
 	}
 
 	/*bucket create*/
